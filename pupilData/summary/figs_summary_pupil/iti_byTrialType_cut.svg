@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1200 800" style="enable-background:new 0 0 1200 800;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2.6667;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{font-family:'MyriadPro-Regular';}
+	.st2{font-size:34.6667px;}
+	.st3{font-size:38.1333px;}
+	.st4{fill:none;stroke:#000000;stroke-width:0.6667;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#000000;stroke-width:0.6667;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#000000;stroke-width:2.6667;stroke-linejoin:bevel;stroke-miterlimit:1;stroke-dasharray:8,8;}
+	.st7{fill:#FFFFFF;}
+</style>
+<g>
+	<line class="st0" x1="161" y1="294" x2="408" y2="294"/>
+	<line class="st0" x1="162.2" y1="294" x2="162.2" y2="298.9"/>
+	<line class="st0" x1="284.3" y1="294" x2="284.3" y2="298.9"/>
+	<line class="st0" x1="406.5" y1="294" x2="406.5" y2="298.9"/>
+</g>
+<g transform="translate(162.2213,308.54)">
+	<text transform="matrix(1 0 0 1 -10 35)" class="st1 st2">0</text>
+</g>
+<g transform="translate(284.3474,308.54)">
+	<text transform="matrix(1 0 0 1 -19.5 35)" class="st1 st2">10</text>
+</g>
+<g transform="translate(406.4734,308.54)">
+	<text transform="matrix(1 0 0 1 -19.5 35)" class="st1 st2">20</text>
+</g>
+<g transform="translate(284.5001,352.8733)">
+	<text transform="matrix(1 0 0 1 -169.5 39)" class="st1 st3">Inter-trial interval (s)</text>
+</g>
+<g>
+	<line class="st0" x1="161" y1="294" x2="161" y2="60"/>
+	<line class="st0" x1="161" y1="294" x2="156.1" y2="294"/>
+	<line class="st0" x1="161" y1="230.8" x2="156.1" y2="230.8"/>
+	<line class="st0" x1="161" y1="167.5" x2="156.1" y2="167.5"/>
+	<line class="st0" x1="161" y1="104.3" x2="156.1" y2="104.3"/>
+</g>
+<g transform="translate(146.46,294)">
+	<text transform="matrix(1 0 0 1 -20 13.5)" class="st1 st2">0</text>
+</g>
+<g transform="translate(146.46,230.7568)">
+	<text transform="matrix(1 0 0 1 -58 13.5)" class="st1 st2">200</text>
+</g>
+<g transform="translate(146.46,167.5135)">
+	<text transform="matrix(1 0 0 1 -58 13.5)" class="st1 st2">400</text>
+</g>
+<g transform="translate(146.46,104.2703)">
+	<text transform="matrix(1 0 0 1 -58 13.5)" class="st1 st2">600</text>
+</g>
+<g transform="translate(84.46,176.9999) rotate(-90)">
+	<text transform="matrix(1 0 0 1 -135.0001 -9)" class="st1 st3">Number of trials</text>
+</g>
+<g transform="translate(284.5003,52.85)">
+	<text transform="matrix(1 0 0 1 -75.5 -9)" class="st1 st3">All trials</text>
+</g>
+<g>
+	<line class="st4" x1="161" y1="294" x2="408" y2="294"/>
+</g>
+<g>
+	<path d="M213.8,294v-2.8h-2.4v2.8H213.8z M216.9,294v-86h-2.4v86H216.9z M219.9,294V60h-2.4v234H219.9z M223,294V90h-2.4v204H223z
+		 M226,294V112.2h-2.4V294H226z M229.1,294V122.9h-2.4V294H229.1z M232.1,294V116.6h-2.4V294H232.1z M235.2,294V138.4h-2.4V294
+		H235.2z M238.2,294V156.1h-2.4V294H238.2z M241.3,294V163.4h-2.4V294H241.3z M244.4,294V176.7h-2.4V294H244.4z M247.4,294V193.1
+		H245V294H247.4z M250.5,294v-96.4H248V294H250.5z M253.5,294v-87.9h-2.4V294H253.5z M256.6,294v-81.9h-2.4V294H256.6z M259.6,294
+		v-66.4h-2.4V294H259.6z M262.7,294v-61.7h-2.4V294H262.7z M265.7,294v-42.7h-2.4V294H265.7z M268.8,294v-2.2h-2.4v2.2H268.8z
+		 M271.8,294v-3.5h-2.4v3.5H271.8z M274.9,294v-2.5h-2.4v2.5H274.9z M277.9,294v-1.6h-2.4v1.6H277.9z M281,294v-2.2h-2.4v2.2H281z
+		 M284,294v-5.7h-2.4v5.7H284z M287.1,294v-2.5h-2.4v2.5H287.1z M290.1,294v-1.6h-2.4v1.6H290.1z M293.2,294v-2.8h-2.4v2.8H293.2z
+		 M296.3,294v-2.2h-2.4v2.2H296.3z M299.3,294v-2.5h-2.4v2.5H299.3z M302.4,294v-1.3h-2.4v1.3H302.4z M305.4,294v-0.9H303v0.9H305.4
+		z M308.5,294v-2.5H306v2.5H308.5z M311.5,294v-0.6h-2.4v0.6H311.5z M317.6,294v-0.9h-2.4v0.9H317.6z M320.7,294v-0.3h-2.4v0.3
+		H320.7z M326.8,294v-0.3h-2.4v0.3H326.8z M329.8,294v-0.3h-2.4v0.3H329.8z M335.9,294v-0.6h-2.4v0.6H335.9z M342.1,294v-0.3h-2.4
+		v0.3H342.1z M363.4,294v-0.3H361v0.3H363.4z M384.8,294v-0.3h-2.4v0.3H384.8z"/>
+</g>
+<g>
+	<path class="st5" d="M162.5,294L162.5,294h2.4l0,0H162.5z"/>
+	<path class="st5" d="M165.6,294L165.6,294h2.4l0,0H165.6z"/>
+	<path class="st5" d="M168.6,294L168.6,294h2.4l0,0H168.6z"/>
+	<path class="st5" d="M171.7,294L171.7,294h2.4l0,0H171.7z"/>
+	<path class="st5" d="M174.7,294L174.7,294h2.4l0,0H174.7z"/>
+	<path class="st5" d="M177.8,294L177.8,294h2.4l0,0H177.8z"/>
+	<path class="st5" d="M180.8,294L180.8,294h2.4l0,0H180.8z"/>
+	<path class="st5" d="M183.9,294L183.9,294h2.4l0,0H183.9z"/>
+	<path class="st5" d="M187,294L187,294h2.4l0,0H187z"/>
+	<path class="st5" d="M190,294L190,294h2.4l0,0H190z"/>
+	<path class="st5" d="M193.1,294L193.1,294h2.4l0,0H193.1z"/>
+	<path class="st5" d="M196.1,294L196.1,294h2.4l0,0H196.1z"/>
+	<path class="st5" d="M199.2,294L199.2,294h2.4l0,0H199.2z"/>
+	<path class="st5" d="M202.2,294L202.2,294h2.4l0,0H202.2z"/>
+	<path class="st5" d="M205.3,294L205.3,294h2.4l0,0H205.3z"/>
+	<path class="st5" d="M208.3,294L208.3,294h2.4l0,0H208.3z"/>
+	<path class="st5" d="M211.4,294v-2.8h2.4v2.8H211.4z"/>
+	<path class="st5" d="M214.4,294v-86h2.4v86H214.4z"/>
+	<path class="st5" d="M217.5,294V60h2.4v234H217.5z"/>
+	<path class="st5" d="M220.5,294V90h2.4v204H220.5z"/>
+	<path class="st5" d="M223.6,294V112.2h2.4V294H223.6z"/>
+	<path class="st5" d="M226.6,294V122.9h2.4V294H226.6z"/>
+	<path class="st5" d="M229.7,294V116.6h2.4V294H229.7z"/>
+	<path class="st5" d="M232.7,294V138.4h2.4V294H232.7z"/>
+	<path class="st5" d="M235.8,294V156.1h2.4V294H235.8z"/>
+	<path class="st5" d="M238.9,294V163.4h2.4V294H238.9z"/>
+	<path class="st5" d="M241.9,294V176.7h2.4V294H241.9z"/>
+	<path class="st5" d="M245,294V193.1h2.4V294H245z"/>
+	<path class="st5" d="M248,294v-96.4h2.4V294H248z"/>
+	<path class="st5" d="M251.1,294v-87.9h2.4V294H251.1z"/>
+	<path class="st5" d="M254.1,294v-81.9h2.4V294H254.1z"/>
+	<path class="st5" d="M257.2,294v-66.4h2.4V294H257.2z"/>
+	<path class="st5" d="M260.2,294v-61.7h2.4V294H260.2z"/>
+	<path class="st5" d="M263.3,294v-42.7h2.4V294H263.3z"/>
+	<path class="st5" d="M266.3,294v-2.2h2.4v2.2H266.3z"/>
+	<path class="st5" d="M269.4,294v-3.5h2.4v3.5H269.4z"/>
+	<path class="st5" d="M272.4,294v-2.5h2.4v2.5H272.4z"/>
+	<path class="st5" d="M275.5,294v-1.6h2.4v1.6H275.5z"/>
+	<path class="st5" d="M278.5,294v-2.2h2.4v2.2H278.5z"/>
+	<path class="st5" d="M281.6,294v-5.7h2.4v5.7H281.6z"/>
+	<path class="st5" d="M284.7,294v-2.5h2.4v2.5H284.7z"/>
+	<path class="st5" d="M287.7,294v-1.6h2.4v1.6H287.7z"/>
+	<path class="st5" d="M290.8,294v-2.8h2.4v2.8H290.8z"/>
+	<path class="st5" d="M293.8,294v-2.2h2.4v2.2H293.8z"/>
+	<path class="st5" d="M296.9,294v-2.5h2.4v2.5H296.9z"/>
+	<path class="st5" d="M299.9,294v-1.3h2.4v1.3H299.9z"/>
+	<path class="st5" d="M303,294v-0.9h2.4v0.9H303z"/>
+	<path class="st5" d="M306,294v-2.5h2.4v2.5H306z"/>
+	<path class="st5" d="M309.1,294v-0.6h2.4v0.6H309.1z"/>
+	<path class="st5" d="M312.1,294L312.1,294h2.4l0,0H312.1z"/>
+	<path class="st5" d="M315.2,294v-0.9h2.4v0.9H315.2z"/>
+	<path class="st5" d="M318.2,294v-0.3h2.4v0.3H318.2z"/>
+	<path class="st5" d="M321.3,294L321.3,294h2.4l0,0H321.3z"/>
+	<path class="st5" d="M324.3,294v-0.3h2.4v0.3H324.3z"/>
+	<path class="st5" d="M327.4,294v-0.3h2.4v0.3H327.4z"/>
+	<path class="st5" d="M330.4,294L330.4,294h2.4l0,0H330.4z"/>
+	<path class="st5" d="M333.5,294v-0.6h2.4v0.6H333.5z"/>
+	<path class="st5" d="M336.6,294L336.6,294h2.4l0,0H336.6z"/>
+	<path class="st5" d="M339.6,294v-0.3h2.4v0.3H339.6z"/>
+	<path class="st5" d="M342.7,294L342.7,294h2.4l0,0H342.7z"/>
+	<path class="st5" d="M345.7,294L345.7,294h2.4l0,0H345.7z"/>
+	<path class="st5" d="M348.8,294L348.8,294h2.4l0,0H348.8z"/>
+	<path class="st5" d="M351.8,294L351.8,294h2.4l0,0H351.8z"/>
+	<path class="st5" d="M354.9,294L354.9,294h2.4l0,0H354.9z"/>
+	<path class="st5" d="M357.9,294L357.9,294h2.4l0,0H357.9z"/>
+	<path class="st5" d="M361,294v-0.3h2.4v0.3H361z"/>
+	<path class="st5" d="M364,294L364,294h2.4l0,0H364z"/>
+	<path class="st5" d="M367.1,294L367.1,294h2.4l0,0H367.1z"/>
+	<path class="st5" d="M370.1,294L370.1,294h2.4l0,0H370.1z"/>
+	<path class="st5" d="M373.2,294L373.2,294h2.4l0,0H373.2z"/>
+	<path class="st5" d="M376.2,294L376.2,294h2.4l0,0H376.2z"/>
+	<path class="st5" d="M379.3,294L379.3,294h2.4l0,0H379.3z"/>
+	<path class="st5" d="M382.4,294v-0.3h2.4v0.3H382.4z"/>
+	<path class="st5" d="M385.4,294L385.4,294h2.4l0,0H385.4z"/>
+	<path class="st5" d="M388.5,294L388.5,294h2.4l0,0H388.5z"/>
+	<path class="st5" d="M391.5,294L391.5,294h2.4l0,0H391.5z"/>
+	<path class="st5" d="M394.6,294L394.6,294h2.4l0,0H394.6z"/>
+	<path class="st5" d="M397.6,294L397.6,294h2.4l0,0H397.6z"/>
+	<path class="st5" d="M400.7,294L400.7,294h2.4l0,0H400.7z"/>
+	<path class="st5" d="M403.7,294L403.7,294h2.4l0,0H403.7z"/>
+</g>
+<g>
+	<line class="st6" x1="162.2" y1="294" x2="162.2" y2="60"/>
+</g>
+<g>
+	<path class="st7" d="M498,294h247V60H498V294z"/>
+</g>
+<g>
+	<line class="st0" x1="498" y1="294" x2="745" y2="294"/>
+	<line class="st0" x1="499.2" y1="294" x2="499.2" y2="298.9"/>
+	<line class="st0" x1="621.3" y1="294" x2="621.3" y2="298.9"/>
+	<line class="st0" x1="743.5" y1="294" x2="743.5" y2="298.9"/>
+</g>
+<g transform="translate(499.2213,308.54)">
+	<text transform="matrix(1 0 0 1 -10 35)" class="st1 st2">0</text>
+</g>
+<g transform="translate(621.3474,308.54)">
+	<text transform="matrix(1 0 0 1 -19.5 35)" class="st1 st2">10</text>
+</g>
+<g transform="translate(743.4734,308.54)">
+	<text transform="matrix(1 0 0 1 -19.5 35)" class="st1 st2">20</text>
+</g>
+<g transform="translate(621.5001,352.8733)">
+	<text transform="matrix(1 0 0 1 -169.5 39)" class="st1 st3">Inter-trial interval (s)</text>
+</g>
+<g>
+	<line class="st0" x1="498" y1="294" x2="498" y2="60"/>
+	<line class="st0" x1="498" y1="294" x2="493.1" y2="294"/>
+	<line class="st0" x1="498" y1="230.8" x2="493.1" y2="230.8"/>
+	<line class="st0" x1="498" y1="167.5" x2="493.1" y2="167.5"/>
+	<line class="st0" x1="498" y1="104.3" x2="493.1" y2="104.3"/>
+</g>
+<g transform="translate(483.46,294)">
+	<text transform="matrix(1 0 0 1 -20 13.5)" class="st1 st2">0</text>
+</g>
+<g transform="translate(483.46,230.7568)">
+	<text transform="matrix(1 0 0 1 -58 13.5)" class="st1 st2">200</text>
+</g>
+<g transform="translate(483.46,167.5135)">
+	<text transform="matrix(1 0 0 1 -58 13.5)" class="st1 st2">400</text>
+</g>
+<g transform="translate(483.46,104.2703)">
+	<text transform="matrix(1 0 0 1 -58 13.5)" class="st1 st2">600</text>
+</g>
+<g transform="translate(621.5006,52.85)">
+	<text transform="matrix(1 0 0 1 -86 -9)" class="st1 st3">Left trials</text>
+</g>
+<g>
+	<line class="st4" x1="498" y1="294" x2="745" y2="294"/>
+</g>
+<g>
+	<path d="M550.8,294v-1.3h-2.4v1.3H550.8z M553.9,294v-13.6h-2.4V294H553.9z M556.9,294V182.7h-2.4V294H556.9z M560,294v-88.2h-2.4
+		V294H560z M563,294v-80h-2.4v80H563z M566.1,294v-73.7h-2.4V294H566.1z M569.1,294v-80.3h-2.4V294H569.1z M572.2,294v-76.5h-2.4
+		V294H572.2z M575.2,294v-63.9h-2.4V294H575.2z M578.3,294v-57.9h-2.4V294H578.3z M581.4,294v-53.4h-2.4V294H581.4z M584.4,294
+		v-46.2H582V294H584.4z M587.5,294v-44H585v44H587.5z M590.5,294v-38.9h-2.4V294H590.5z M593.6,294v-38.6h-2.4V294H593.6z
+		 M596.6,294v-24.7h-2.4V294H596.6z M599.7,294v-25.6h-2.4V294H599.7z M602.7,294v-25.9h-2.4V294H602.7z M605.8,294v-0.9h-2.4v0.9
+		H605.8z M608.8,294v-1.3h-2.4v1.3H608.8z M611.9,294v-1.6h-2.4v1.6H611.9z M614.9,294v-0.6h-2.4v0.6H614.9z M618,294v-1.3h-2.4v1.3
+		H618z M621,294v-1.6h-2.4v1.6H621z M624.1,294v-1.9h-2.4v1.9H624.1z M627.1,294v-0.3h-2.4v0.3H627.1z M630.2,294v-0.3h-2.4v0.3
+		H630.2z M633.3,294v-0.6h-2.4v0.6H633.3z M636.3,294v-0.6h-2.4v0.6H636.3z M639.4,294v-0.9h-2.4v0.9H639.4z M642.4,294v-0.3H640
+		v0.3H642.4z M645.5,294v-0.9H643v0.9H645.5z M648.5,294v-0.6h-2.4v0.6H648.5z M654.6,294v-0.6h-2.4v0.6H654.6z M657.7,294v-0.3
+		h-2.4v0.3H657.7z M666.8,294v-0.3h-2.4v0.3H666.8z M679.1,294v-0.3h-2.4v0.3H679.1z M721.8,294v-0.3h-2.4v0.3H721.8z"/>
+</g>
+<g>
+	<path class="st5" d="M499.5,294L499.5,294h2.4l0,0H499.5z"/>
+	<path class="st5" d="M502.6,294L502.6,294h2.4l0,0H502.6z"/>
+	<path class="st5" d="M505.6,294L505.6,294h2.4l0,0H505.6z"/>
+	<path class="st5" d="M508.7,294L508.7,294h2.4l0,0H508.7z"/>
+	<path class="st5" d="M511.7,294L511.7,294h2.4l0,0H511.7z"/>
+	<path class="st5" d="M514.8,294L514.8,294h2.4l0,0H514.8z"/>
+	<path class="st5" d="M517.8,294L517.8,294h2.4l0,0H517.8z"/>
+	<path class="st5" d="M520.9,294L520.9,294h2.4l0,0H520.9z"/>
+	<path class="st5" d="M524,294L524,294h2.4l0,0H524z"/>
+	<path class="st5" d="M527,294L527,294h2.4l0,0H527z"/>
+	<path class="st5" d="M530.1,294L530.1,294h2.4l0,0H530.1z"/>
+	<path class="st5" d="M533.1,294L533.1,294h2.4l0,0H533.1z"/>
+	<path class="st5" d="M536.2,294L536.2,294h2.4l0,0H536.2z"/>
+	<path class="st5" d="M539.2,294L539.2,294h2.4l0,0H539.2z"/>
+	<path class="st5" d="M542.3,294L542.3,294h2.4l0,0H542.3z"/>
+	<path class="st5" d="M545.3,294L545.3,294h2.4l0,0H545.3z"/>
+	<path class="st5" d="M548.4,294v-1.3h2.4v1.3H548.4z"/>
+	<path class="st5" d="M551.4,294v-13.6h2.4V294H551.4z"/>
+	<path class="st5" d="M554.5,294V182.7h2.4V294H554.5z"/>
+	<path class="st5" d="M557.5,294v-88.2h2.4V294H557.5z"/>
+	<path class="st5" d="M560.6,294v-80h2.4v80H560.6z"/>
+	<path class="st5" d="M563.6,294v-73.7h2.4V294H563.6z"/>
+	<path class="st5" d="M566.7,294v-80.3h2.4V294H566.7z"/>
+	<path class="st5" d="M569.7,294v-76.5h2.4V294H569.7z"/>
+	<path class="st5" d="M572.8,294v-63.9h2.4V294H572.8z"/>
+	<path class="st5" d="M575.9,294v-57.9h2.4V294H575.9z"/>
+	<path class="st5" d="M578.9,294v-53.4h2.4V294H578.9z"/>
+	<path class="st5" d="M582,294v-46.2h2.4V294H582z"/>
+	<path class="st5" d="M585,294v-44h2.4v44H585z"/>
+	<path class="st5" d="M588.1,294v-38.9h2.4V294H588.1z"/>
+	<path class="st5" d="M591.1,294v-38.6h2.4V294H591.1z"/>
+	<path class="st5" d="M594.2,294v-24.7h2.4V294H594.2z"/>
+	<path class="st5" d="M597.2,294v-25.6h2.4V294H597.2z"/>
+	<path class="st5" d="M600.3,294v-25.9h2.4V294H600.3z"/>
+	<path class="st5" d="M603.3,294v-0.9h2.4v0.9H603.3z"/>
+	<path class="st5" d="M606.4,294v-1.3h2.4v1.3H606.4z"/>
+	<path class="st5" d="M609.4,294v-1.6h2.4v1.6H609.4z"/>
+	<path class="st5" d="M612.5,294v-0.6h2.4v0.6H612.5z"/>
+	<path class="st5" d="M615.5,294v-1.3h2.4v1.3H615.5z"/>
+	<path class="st5" d="M618.6,294v-1.6h2.4v1.6H618.6z"/>
+	<path class="st5" d="M621.7,294v-1.9h2.4v1.9H621.7z"/>
+	<path class="st5" d="M624.7,294v-0.3h2.4v0.3H624.7z"/>
+	<path class="st5" d="M627.8,294v-0.3h2.4v0.3H627.8z"/>
+	<path class="st5" d="M630.8,294v-0.6h2.4v0.6H630.8z"/>
+	<path class="st5" d="M633.9,294v-0.6h2.4v0.6H633.9z"/>
+	<path class="st5" d="M636.9,294v-0.9h2.4v0.9H636.9z"/>
+	<path class="st5" d="M640,294v-0.3h2.4v0.3H640z"/>
+	<path class="st5" d="M643,294v-0.9h2.4v0.9H643z"/>
+	<path class="st5" d="M646.1,294v-0.6h2.4v0.6H646.1z"/>
+	<path class="st5" d="M649.1,294L649.1,294h2.4l0,0H649.1z"/>
+	<path class="st5" d="M652.2,294v-0.6h2.4v0.6H652.2z"/>
+	<path class="st5" d="M655.2,294v-0.3h2.4v0.3H655.2z"/>
+	<path class="st5" d="M658.3,294L658.3,294h2.4l0,0H658.3z"/>
+	<path class="st5" d="M661.3,294L661.3,294h2.4l0,0H661.3z"/>
+	<path class="st5" d="M664.4,294v-0.3h2.4v0.3H664.4z"/>
+	<path class="st5" d="M667.5,294L667.5,294h2.4l0,0H667.5z"/>
+	<path class="st5" d="M670.5,294L670.5,294h2.4l0,0H670.5z"/>
+	<path class="st5" d="M673.6,294L673.6,294h2.4l0,0H673.6z"/>
+	<path class="st5" d="M676.6,294v-0.3h2.4v0.3H676.6z"/>
+	<path class="st5" d="M679.7,294L679.7,294h2.4l0,0H679.7z"/>
+	<path class="st5" d="M682.7,294L682.7,294h2.4l0,0H682.7z"/>
+	<path class="st5" d="M685.8,294L685.8,294h2.4l0,0H685.8z"/>
+	<path class="st5" d="M688.8,294L688.8,294h2.4l0,0H688.8z"/>
+	<path class="st5" d="M691.9,294L691.9,294h2.4l0,0H691.9z"/>
+	<path class="st5" d="M694.9,294L694.9,294h2.4l0,0H694.9z"/>
+	<path class="st5" d="M698,294L698,294h2.4l0,0H698z"/>
+	<path class="st5" d="M701,294L701,294h2.4l0,0H701z"/>
+	<path class="st5" d="M704.1,294L704.1,294h2.4l0,0H704.1z"/>
+	<path class="st5" d="M707.1,294L707.1,294h2.4l0,0H707.1z"/>
+	<path class="st5" d="M710.2,294L710.2,294h2.4l0,0H710.2z"/>
+	<path class="st5" d="M713.2,294L713.2,294h2.4l0,0H713.2z"/>
+	<path class="st5" d="M716.3,294L716.3,294h2.4l0,0H716.3z"/>
+	<path class="st5" d="M719.4,294v-0.3h2.4v0.3H719.4z"/>
+	<path class="st5" d="M722.4,294L722.4,294h2.4l0,0H722.4z"/>
+	<path class="st5" d="M725.5,294L725.5,294h2.4l0,0H725.5z"/>
+	<path class="st5" d="M728.5,294L728.5,294h2.4l0,0H728.5z"/>
+	<path class="st5" d="M731.6,294L731.6,294h2.4l0,0H731.6z"/>
+	<path class="st5" d="M734.6,294L734.6,294h2.4l0,0H734.6z"/>
+	<path class="st5" d="M737.7,294L737.7,294h2.4l0,0H737.7z"/>
+	<path class="st5" d="M740.7,294L740.7,294h2.4l0,0H740.7z"/>
+</g>
+<g>
+	<line class="st6" x1="499.2" y1="294" x2="499.2" y2="60"/>
+</g>
+<g>
+	<path class="st7" d="M835,294h246V60H835V294z"/>
+</g>
+<g>
+	<line class="st0" x1="835" y1="294" x2="1081" y2="294"/>
+	<line class="st0" x1="836.2" y1="294" x2="836.2" y2="298.9"/>
+	<line class="st0" x1="957.8" y1="294" x2="957.8" y2="298.9"/>
+	<line class="st0" x1="1079.5" y1="294" x2="1079.5" y2="298.9"/>
+</g>
+<g transform="translate(836.2163,308.52)">
+	<text transform="matrix(1 0 0 1 -10 35)" class="st1 st2">0</text>
+</g>
+<g transform="translate(957.848,308.52)">
+	<text transform="matrix(1 0 0 1 -19.5 35)" class="st1 st2">10</text>
+</g>
+<g transform="translate(1079.4796,308.52)">
+	<text transform="matrix(1 0 0 1 -19.5 35)" class="st1 st2">20</text>
+</g>
+<g transform="translate(958.0001,352.8533)">
+	<text transform="matrix(1 0 0 1 -169.5 39)" class="st1 st3">Inter-trial interval (s)</text>
+</g>
+<g>
+	<line class="st0" x1="835" y1="294" x2="835" y2="60"/>
+	<line class="st0" x1="835" y1="294" x2="830.1" y2="294"/>
+	<line class="st0" x1="835" y1="230.8" x2="830.1" y2="230.8"/>
+	<line class="st0" x1="835" y1="167.5" x2="830.1" y2="167.5"/>
+	<line class="st0" x1="835" y1="104.3" x2="830.1" y2="104.3"/>
+</g>
+<g transform="translate(820.48,294)">
+	<text transform="matrix(1 0 0 1 -20 13.5)" class="st1 st2">0</text>
+</g>
+<g transform="translate(820.48,230.7568)">
+	<text transform="matrix(1 0 0 1 -58 13.5)" class="st1 st2">200</text>
+</g>
+<g transform="translate(820.48,167.5135)">
+	<text transform="matrix(1 0 0 1 -58 13.5)" class="st1 st2">400</text>
+</g>
+<g transform="translate(820.48,104.2703)">
+	<text transform="matrix(1 0 0 1 -58 13.5)" class="st1 st2">600</text>
+</g>
+<g transform="translate(958.0009,52.85)">
+	<text transform="matrix(1 0 0 1 -100 -9)" class="st1 st3">Right trials</text>
+</g>
+<g>
+	<line class="st4" x1="835" y1="294" x2="1081" y2="294"/>
+</g>
+<g>
+	<path d="M887.6,294v-1.6h-2.4v1.6H887.6z M890.6,294v-70.2h-2.4V294H890.6z M893.7,294V174.2h-2.4V294H893.7z M896.7,294V180.8
+		h-2.4V294H896.7z M899.8,294v-97.7h-2.4V294H899.8z M902.8,294v-95.2h-2.4V294H902.8z M905.9,294v-95.2h-2.4V294H905.9z M908.9,294
+		v-77.5h-2.4V294H908.9z M911.9,294v-71.5h-2.4V294H911.9z M915,294v-72.1h-2.4V294H915z M918,294v-62.6h-2.4V294H918z M921.1,294
+		v-54.4h-2.4V294H921.1z M924.1,294v-51.5h-2.4V294H924.1z M927.1,294v-47.4h-2.4V294H927.1z M930.2,294v-43.3h-2.4V294H930.2z
+		 M933.2,294v-41.1h-2.4V294H933.2z M936.3,294v-35.7h-2.4V294H936.3z M939.3,294v-16.8h-2.4V294H939.3z M942.3,294v-1.3h-2.4v1.3
+		H942.3z M945.4,294v-2.2h-2.4v2.2H945.4z M948.4,294v-0.9H946v0.9H948.4z M951.5,294v-0.9H949v0.9H951.5z M954.5,294v-0.9h-2.4v0.9
+		H954.5z M957.5,294v-4.1h-2.4v4.1H957.5z M960.6,294v-0.3h-2.4v0.3H960.6z M963.6,294v-1.3h-2.4v1.3H963.6z M966.7,294v-2.5h-2.4
+		v2.5H966.7z M969.7,294v-1.6h-2.4v1.6H969.7z M972.7,294v-1.6h-2.4v1.6H972.7z M975.8,294v-0.3h-2.4v0.3H975.8z M978.8,294v-0.6
+		h-2.4v0.6H978.8z M981.9,294v-1.6h-2.4v1.6H981.9z M991,294v-0.3h-2.4v0.3H991z M1009.2,294v-0.6h-2.4v0.6H1009.2z M1036.6,294
+		v-0.3h-2.4v0.3H1036.6z"/>
+</g>
+<g>
+	<path class="st5" d="M836.5,294L836.5,294h2.4l0,0H836.5z"/>
+	<path class="st5" d="M839.6,294L839.6,294h2.4l0,0H839.6z"/>
+	<path class="st5" d="M842.6,294L842.6,294h2.4l0,0H842.6z"/>
+	<path class="st5" d="M845.6,294L845.6,294h2.4l0,0H845.6z"/>
+	<path class="st5" d="M848.7,294L848.7,294h2.4l0,0H848.7z"/>
+	<path class="st5" d="M851.7,294L851.7,294h2.4l0,0H851.7z"/>
+	<path class="st5" d="M854.8,294L854.8,294h2.4l0,0H854.8z"/>
+	<path class="st5" d="M857.8,294L857.8,294h2.4l0,0H857.8z"/>
+	<path class="st5" d="M860.8,294L860.8,294h2.4l0,0H860.8z"/>
+	<path class="st5" d="M863.9,294L863.9,294h2.4l0,0H863.9z"/>
+	<path class="st5" d="M866.9,294L866.9,294h2.4l0,0H866.9z"/>
+	<path class="st5" d="M870,294L870,294h2.4l0,0H870z"/>
+	<path class="st5" d="M873,294L873,294h2.4l0,0H873z"/>
+	<path class="st5" d="M876.1,294L876.1,294h2.4l0,0H876.1z"/>
+	<path class="st5" d="M879.1,294L879.1,294h2.4l0,0H879.1z"/>
+	<path class="st5" d="M882.1,294L882.1,294h2.4l0,0H882.1z"/>
+	<path class="st5" d="M885.2,294v-1.6h2.4v1.6H885.2z"/>
+	<path class="st5" d="M888.2,294v-70.2h2.4V294H888.2z"/>
+	<path class="st5" d="M891.3,294V174.2h2.4V294H891.3z"/>
+	<path class="st5" d="M894.3,294V180.8h2.4V294H894.3z"/>
+	<path class="st5" d="M897.3,294v-97.7h2.4V294H897.3z"/>
+	<path class="st5" d="M900.4,294v-95.2h2.4V294H900.4z"/>
+	<path class="st5" d="M903.4,294v-95.2h2.4V294H903.4z"/>
+	<path class="st5" d="M906.5,294v-77.5h2.4V294H906.5z"/>
+	<path class="st5" d="M909.5,294v-71.5h2.4V294H909.5z"/>
+	<path class="st5" d="M912.5,294v-72.1h2.4V294H912.5z"/>
+	<path class="st5" d="M915.6,294v-62.6h2.4V294H915.6z"/>
+	<path class="st5" d="M918.6,294v-54.4h2.4V294H918.6z"/>
+	<path class="st5" d="M921.7,294v-51.5h2.4V294H921.7z"/>
+	<path class="st5" d="M924.7,294v-47.4h2.4V294H924.7z"/>
+	<path class="st5" d="M927.7,294v-43.3h2.4V294H927.7z"/>
+	<path class="st5" d="M930.8,294v-41.1h2.4V294H930.8z"/>
+	<path class="st5" d="M933.8,294v-35.7h2.4V294H933.8z"/>
+	<path class="st5" d="M936.9,294v-16.8h2.4V294H936.9z"/>
+	<path class="st5" d="M939.9,294v-1.3h2.4v1.3H939.9z"/>
+	<path class="st5" d="M942.9,294v-2.2h2.4v2.2H942.9z"/>
+	<path class="st5" d="M946,294v-0.9h2.4v0.9H946z"/>
+	<path class="st5" d="M949,294v-0.9h2.4v0.9H949z"/>
+	<path class="st5" d="M952.1,294v-0.9h2.4v0.9H952.1z"/>
+	<path class="st5" d="M955.1,294v-4.1h2.4v4.1H955.1z"/>
+	<path class="st5" d="M958.2,294v-0.3h2.4v0.3H958.2z"/>
+	<path class="st5" d="M961.2,294v-1.3h2.4v1.3H961.2z"/>
+	<path class="st5" d="M964.2,294v-2.5h2.4v2.5H964.2z"/>
+	<path class="st5" d="M967.3,294v-1.6h2.4v1.6H967.3z"/>
+	<path class="st5" d="M970.3,294v-1.6h2.4v1.6H970.3z"/>
+	<path class="st5" d="M973.4,294v-0.3h2.4v0.3H973.4z"/>
+	<path class="st5" d="M976.4,294v-0.6h2.4v0.6H976.4z"/>
+	<path class="st5" d="M979.4,294v-1.6h2.4v1.6H979.4z"/>
+	<path class="st5" d="M982.5,294L982.5,294h2.4l0,0H982.5z"/>
+	<path class="st5" d="M985.5,294L985.5,294h2.4l0,0H985.5z"/>
+	<path class="st5" d="M988.6,294v-0.3h2.4v0.3H988.6z"/>
+	<path class="st5" d="M991.6,294L991.6,294h2.4l0,0H991.6z"/>
+	<path class="st5" d="M994.6,294L994.6,294h2.4l0,0H994.6z"/>
+	<path class="st5" d="M997.7,294L997.7,294h2.4l0,0H997.7z"/>
+	<path class="st5" d="M1000.7,294L1000.7,294h2.4l0,0H1000.7z"/>
+	<path class="st5" d="M1003.8,294L1003.8,294h2.4l0,0H1003.8z"/>
+	<path class="st5" d="M1006.8,294v-0.6h2.4v0.6H1006.8z"/>
+	<path class="st5" d="M1009.8,294L1009.8,294h2.4l0,0H1009.8z"/>
+	<path class="st5" d="M1012.9,294L1012.9,294h2.4l0,0H1012.9z"/>
+	<path class="st5" d="M1015.9,294L1015.9,294h2.4l0,0H1015.9z"/>
+	<path class="st5" d="M1019,294L1019,294h2.4l0,0H1019z"/>
+	<path class="st5" d="M1022,294L1022,294h2.4l0,0H1022z"/>
+	<path class="st5" d="M1025,294L1025,294h2.4l0,0H1025z"/>
+	<path class="st5" d="M1028.1,294L1028.1,294h2.4l0,0H1028.1z"/>
+	<path class="st5" d="M1031.1,294L1031.1,294h2.4l0,0H1031.1z"/>
+	<path class="st5" d="M1034.2,294v-0.3h2.4v0.3H1034.2z"/>
+	<path class="st5" d="M1037.2,294L1037.2,294h2.4l0,0H1037.2z"/>
+	<path class="st5" d="M1040.3,294L1040.3,294h2.4l0,0H1040.3z"/>
+	<path class="st5" d="M1043.3,294L1043.3,294h2.4l0,0H1043.3z"/>
+	<path class="st5" d="M1046.3,294L1046.3,294h2.4l0,0H1046.3z"/>
+	<path class="st5" d="M1049.4,294L1049.4,294h2.4l0,0H1049.4z"/>
+	<path class="st5" d="M1052.4,294L1052.4,294h2.4l0,0H1052.4z"/>
+	<path class="st5" d="M1055.5,294L1055.5,294h2.4l0,0H1055.5z"/>
+	<path class="st5" d="M1058.5,294L1058.5,294h2.4l0,0H1058.5z"/>
+	<path class="st5" d="M1061.5,294L1061.5,294h2.4l0,0H1061.5z"/>
+	<path class="st5" d="M1064.6,294L1064.6,294h2.4l0,0H1064.6z"/>
+	<path class="st5" d="M1067.6,294L1067.6,294h2.4l0,0H1067.6z"/>
+	<path class="st5" d="M1070.7,294L1070.7,294h2.4l0,0H1070.7z"/>
+	<path class="st5" d="M1073.7,294L1073.7,294h2.4l0,0H1073.7z"/>
+	<path class="st5" d="M1076.7,294L1076.7,294h2.4l0,0H1076.7z"/>
+</g>
+<g>
+	<line class="st6" x1="836.2" y1="294" x2="836.2" y2="60"/>
+</g>
+</svg>
