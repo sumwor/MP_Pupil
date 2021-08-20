@@ -42,7 +42,12 @@ elseif strcmp(fit_fun, 'funHybrid_FQBayesian_FQ')
     else
         [qpar, negloglike, exitflag]=fmincon(func_handle, initpar, [], [], [], [], lb, ub, [], op, stats);
     end
-
+elseif strcmp(fit_fun, 'funFQ_RPE_CK_drift') || strcmp(fit_fun, 'funFQ_RPE_drift')
+    if ~exist('lb','var')
+        [qpar, negloglike, exitflag]=fminsearch(func_handle, initpar, op, stats);
+    else
+        [qpar, negloglike, exitflag]=fmincon(func_handle, initpar, [], [], [], [], lb, ub, [], op, stats);
+    end
 else
     if ~exist('lb','var')
         [qpar, negloglike, exitflag]=fminsearch(func_handle, initpar, op, [stats.c stats.r]);

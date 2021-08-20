@@ -8,7 +8,7 @@ function stats_sim=predictAgent_drift(player1,stats)
 %       label - the name of the algorithm, the name should correspond to a .m file
 %       params - parameters associated with that algorithm
 %   stats:      stats about the actual choice behavior
-%
+%   
 %OUTPUT ARGUMENTS
 %   stats_sim:      simulated choice behavior and latent variables
 
@@ -20,6 +20,7 @@ r = stats.r(:,1);       %outcomes during actual behavior
 n = numel(c);           %number of trials
 
 stats_sim = []; %stat for the game
+
 stats_sim.currTrial = 1;    % starts at trial number 1
 stats_sim.pl=nan(n,1);      % probability to choose left port
 stats_sim.c=nan(n,1);       % choice vector
@@ -28,6 +29,19 @@ stats_sim.ql=nan(n,1);      % action value for left choice
 stats_sim.qr=nan(n,1);      % action value for right choice
 stats_sim.rpe=nan(n,1);     % reward prediction error vector
 
+stats_sim.qr(1) = stats.qr; % [vr, vl, cr, cl]
+stats_sim.ql(1) = stats.ql;
+
+stats_sim.rpe(1) = stats.rpe;
+stats_sim.pl(1) = stats.pl;
+stats_sim.pr(1) = stats.pr;
+
+if strcmp(player1.label, 'algo_FQ_RPE_CK_drift')
+    stats_sim.ckl=nan(n,1);      % action value for left choice
+    stats_sim.ckr=nan(n,1);      % action value for right choice
+    stats_sim.ckl(1) = stats.ckl;
+    stats_sim.ckr(1) = stats.ckr;
+end
 stats_sim.playerlabel{1} = player1.label;
 stats_sim.playerparams{1} = player1.params;
 

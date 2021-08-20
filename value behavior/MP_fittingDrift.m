@@ -1,9 +1,9 @@
 function MP_fittingDrift(dataIndex,save_path)
 % %MP_fittingPerAnimal %
-%PURPOSE:   Fit various learning algorithms to experimental data, on a
+%PURPOSE:   Fit learning algorithms with drifting parameters to experimental data, on a
 %           per-animal basis by merging sessions from same animal
-%AUTHORS:   H Atilgan and AC Kwan 191212
-%
+%reference: J. Wang et al. Nat. Neurosci. 2018
+
 %INPUT ARGUMENTS
 %   dataIndex:    a database index table for the sessions to analyze
 %   save_path:    path for saving the analysis
@@ -35,11 +35,17 @@ function MP_fittingDrift(dataIndex,save_path)
 % model{4}.lb=[0 0];             % upper bound of parameters
 % model{4}.ub=[1 inf];           % lower bound of parameters
 
-model{1}.name = 'FQ_RPE_CK'; % with a choice autocorrelation term
-model{1}.fun = 'funFQ_RPE_CK';
+model{1}.name = 'FQ_RPE_CK_drift'; % with a choice autocorrelation term
+model{1}.fun = 'funFQ_RPE_CK_drift';
 model{1}.initpar = [0.1 0 0.1 0.1]; % initial [alpha beta alpha_K beta_K]
 model{1}.lb = [0 0 0 0];
 model{1}.ub = [1 inf 1 inf];
+
+model{2}.name = 'FQ_RPE_drift';      % text label to refer to the model
+model{2}.fun = 'funFQ_RPE_drift';    % the corresponding .m code for the model
+model{2}.initpar=[0.5 5];      % initial [alpha_reward beta]
+model{2}.lb=[0 0];             % upper bound of parameters
+model{2}.ub=[1 inf];           % lower bound of parameters
 
 
 %%
@@ -92,47 +98,137 @@ for k=1:numel(model)
             
             stats_fit.c = stats_all.c(:,1);
             stats_fit.r =stats_all.r;
-            if isfield(model{k},'lb')
-                [fitpar{j}, ~, bic{j}, ~]=fit_fun(stats_fit,model{k}.fun,model{k}.initpar,model{k}.lb,model{k}.ub);
-            else
-                [fitpar{j}, ~, bic{j}, ~]=fit_fun(stats_fit,model{k}.fun,model{k}.initpar);
+            window  = 20; % fit the parameter every 10 trials
+            
+%             % find the window length with the smallest BIC
+%             window = 200:50:700;
+%             
+%             for kk = 1:length(window)
+            numWin = floor(length(stats_fit.r)/window);
+            
+            % initiate data matrix
+            if strcmp(model{k}.name, 'FQ_RPE_CK_drift')
+                player1.label=['algo_',model{k}.name];
+                player1.params_save.a=zeros(1, numWin);
+                player1.params_save.b=zeros(1, numWin);
+                player1.params_save.ac = zeros(1, numWin);
+                player1.params_save.bc = zeros(1, numWin);
+            elseif strcmp(model{k}.name, 'FQ_RPE_drift')
+                player1.label=['algo_',model{k}.name];
+                player1.params_save.a=zeros(1, numWin);
+                player1.params_save.b=zeros(1, numWin);
             end
             
-            %get the latent variable, save them in sessions
-            if strcmp(model{k}.name, 'FQ_RPE')
-                player1.label=['algo_',model{k}.name];   
-                player1.params.a=fitpar{j}(1);
-                player1.params.b=fitpar{j}(2);
-
+            for tt = 1:numWin
+                stats_drift.c = stats_fit.c(window*(tt-1)+1:window*tt);
+                stats_drift.r = stats_fit.r(window*(tt-1)+1:window*tt);
+                if tt == 1
+                    stats_drift.ql = 0; stats_drift.qr = 0; 
+                    stats_drift.pl = 0.5; stats_drift.pr = 0.5; stats_drift.rpe = NaN;
+                    if strcmp(model{k}.name, 'FQ_RPE_CK_drift')
+                        stats_drift.ckl = 0; stats_drift.ckr = 0;
+                    end
+                else
+                    % update the value based on the last trial of the
+                    % previous window
+                    if stats_fit.c(window*(tt-1)) == -1
+                        stats_drift.rpe = stats_fit.r(window*(tt-1))-stats_sim.ql(end);
+                        stats_drift.ql = stats_sim.ql(end) + player1.params.a*stats_drift.rpe;
+                        stats_drift.qr = (1-player1.params.a)*stats_sim.qr(end); 
+                        if strcmp(model{k}.name, 'FQ_RPE_CK_drift')
+                            stats_drift.ckl = stats_sim.ckl(end) + player1.params.ac * (1-stats_sim.ckl(end));
+                            stats_drift.ckr = stats_sim.ckr(end);
+                        end
+                    elseif stats_fit.c(window*(tt-1)) == 1
+                        stats_drift.rpe = stats_fit.r(window*(tt-1))-stats_sim.qr(end);
+                        stats_drift.qr = stats_sim.qr(end) + player1.params.a*stats_drift.rpe;
+                        stats_drift.ql = (1-player1.params.a)*stats_sim.ql(end); 
+                        if strcmp(model{k}.name, 'FQ_RPE_CK_drift')
+                            stats_drift.ckr = stats_sim.ckr(end) + player1.params.ac * (1-stats_sim.ckr(end));
+                            stats_drift.ckl = stats_sim.ckl(end);
+                        end
+                    else % missed trials
+                        stats_drift.rpe = 0;
+                        stats_drift.qr = stats_sim.qr(end);
+                        stats_drift.ql = stats_sim.ql(end); 
+                        if strcmp(model{k}.name, 'FQ_RPE_CK_drift')
+                            stats_drift.ckr = stats_sim.ckr(end);
+                            stats_drift.ckl = stats_sim.ckl(end);
+                        end
+                    end
+                    Q = [stats_drift.pl stats_drift.pr]; 
+                    if strcmp(model{k}.name, 'FQ_RPE_CK_drift')
+                        CK = [stats_drift.ckl stats_drift.ckr];
+                        V = player1.params.b*Q + player1.params.bc*CK;
+                    else
+                        V = Q;
+                    end
+                    
+                    p = exp(V)/sum(exp(V));
+                    stats_drift.pl = p(1); stats_drift.pr = p(2);
+                    stats_save.rpe(end) = stats_drift.rpe;
+                end
+                if strcmp(model{k}.name, 'FQ_RPE_CK_drift')
+                    stats_drift.latentV = [ stats_drift.qr,stats_drift.ql,stats_drift.ckr,stats_drift.ckl]; % action values & choice kernels from the previous trial
+                else
+                    stats_drift.latentV = [ stats_drift.qr,stats_drift.ql];
+                end
+                if isfield(model{k},'lb')
+                    [fitpar{tt}, ~, bic{tt}, ~]=fit_fun(stats_drift,model{k}.fun,model{k}.initpar,model{k}.lb,model{k}.ub);
+                else
+                    [fitpar{tt}, ~, bic{tt}, ~]=fit_fun(stats_drift,model{k}.fun,model{k}.initpar);
+                end
                 
-                stats_sim=predictAgent(player1,stats_all);
-                stats_sim.sLength = stats_all.sessionLength;
-                stats_sim.alpha = fitpar{j}(1);
-                stats_sim.beta = fitpar{j}(2);
-                % save stats_sim
-                save(fullfile(save_path,[animalList{j},'_FQRPE.mat']),'stats_sim');
-            elseif strcmp(model{k}.name, 'FQ_RPE_CK')
-                player1.label=['algo_',model{k}.name];   
-                player1.params.a=fitpar{j}(1);
-                player1.params.b=fitpar{j}(2);
-                player1.params.ac = fitpar{j}(3);
-                player1.params.bc = fitpar{j}(4);
+                % get latent variable estimation
                 
-                stats_sim=predictAgent(player1,stats_all);
-                stats_sim.sLength = stats_all.sessionLength;
-                stats_sim.alpha = fitpar{j}(1);
-                stats_sim.beta = fitpar{j}(2);
-                stats_sim.alphac = fitpar{j}(3);
-                stats_sim.betac = fitpar{j}(4);
+                player1.params_save.a(tt) = fitpar{tt}(1);
+                player1.params_save.b(tt) = fitpar{tt}(2);
+                player1.params.a = fitpar{tt}(1);
+                player1.params.b = fitpar{tt}(2);
+                if strcmp(model{k}.name, 'FQ_RPE_CK_drift')
+                    player1.params_save.ac(tt) = fitpar{tt}(3);
+                    player1.params_save.bc(tt) = fitpar{tt}(4);
+                    
+                    player1.params.ac = fitpar{tt}(3);
+                    player1.params.bc = fitpar{tt}(4);
+                end
+                stats_sim=predictAgent_drift(player1,stats_drift);
                 
-                % save stats_sim
-                save(fullfile(save_path,[animalList{j},'_FQRPECK.mat']),'stats_sim');
+                if tt == 1
+                    stats_save = stats_sim;
+                else
+                    fieldname = fieldnames(stats_sim);
+                    for uu = 1:length(fieldname)
+                        if ~strcmp(fieldname{uu},'currTrial')
+                            stats_save.(fieldname{uu}) = [stats_save.(fieldname{uu}); stats_sim.(fieldname{uu})];
+                        end
+                    end
+                   
+                end
+                    
             end
+            
+            % only fit for FQ_RPE_CK model
+            %get the latent variable, save them in sessions
+          
+                % compare the log likelihood of drifting model and stable
+                % model
+                
+                
+                stats_save.sLength = stats_all.sessionLength;
+                stats_save.playerparams = player1.params_save;
+                % save stats_sim
+                if strcmp(model{k}.name, 'FQ_RPE_CK_drift')
+                    save(fullfile(save_path,[animalList{j},'_FQRPECK_drift.mat']),'stats_save');
+                else
+                    save(fullfile(save_path,[animalList{j},'_FQRPE_drift.mat']),'stats_save');
+                end
+           
             animal{j} = animalList{j};
         end
         
         %save behavioral .mat file
-        save(fullfile(save_path, [model{k}.fun(4:end) '_model.mat']),...
+        save(fullfile(save_path, [model{k}.fun(4:end) '_model_drift.mat']),...
             'animal','fitpar','bic');
 
         fitparMat = cell2mat(fitpar');
@@ -142,5 +238,5 @@ for k=1:numel(model)
     
 end
 
-end
+
 

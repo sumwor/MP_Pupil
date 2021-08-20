@@ -79,7 +79,7 @@ MP_saveLatent(dataIndex, model_path);
 
 %% fit for changing parameters
 MP_fittingDrift(dataIndex,model_path);
-
+MP_plotDrift(dataIndex,model_path);
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%% Behavior - Model comparison
