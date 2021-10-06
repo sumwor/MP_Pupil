@@ -48,13 +48,21 @@ for ii = 1:nFiles
                 
                 frameTime = zeros(1, length(pupilData));
                 for kk = 1:length(pupilData)
-                    frameTime(kk) = trialData.triggerTimes(1)-stackInfo.delayTime + 0.05*(kk-1);
+                    if isfield(trialData,'triggerTimes')
+                        frameTime(kk) = trialData.triggerTimes(1)-stackInfo.delayTime + 0.05*(kk-1);
+                    else
+                        frameTime(kk) = trialData.cueTimes(1)-stackInfo.delayTime + 0.05*(kk-1);
+                    end
                 end
                 pupil.t = frameTime;
                 %pupil.center = pupilCenter;
                 % use time from logfile to get rid of the invalid
                 % recordings
-                latestTime = trialData.outcomeTimes(end)+6;  %this is as far as logfile goes
+                if isfield(trialData, 'outcomeTimes')
+                    latestTime = trialData.outcomeTimes(end)+6;  %this is as far as logfile goes
+                else
+                    latestTime = trialData.cueTimes(end)+3;  %this is as far as logfile goes
+                end
                 % check whether frames are equal in log file and
                 pupilData = pupilData(pupil.t<latestTime);
                 pupil.t = pupil.t(pupil.t<latestTime);

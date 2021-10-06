@@ -17,7 +17,11 @@ logFrameTrial = zeros(1, length(trialData.cueTimes));
         
 for ii = 1:length(trialData.cue)
     if ii < length(trialData.cue)
-        trialTime = trialData.triggerTimes(ii+1) - trialData.triggerTimes(ii);
+        if isfield(trialData, 'triggerTimes')
+            trialTime = trialData.triggerTimes(ii+1) - trialData.triggerTimes(ii);
+        else
+            trialTime = trialData.cueTimes(ii+1) - trialData.cueTimes(ii);
+        end
         logFrameTrial(ii) = trialTime * 20;
     else
         trialTime = 0; % skip it for now
