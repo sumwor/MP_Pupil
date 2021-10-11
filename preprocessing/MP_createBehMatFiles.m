@@ -77,8 +77,9 @@ for ii = 1:nFile
     end
     
     Ind = strfind(dataIndex.LogFilePath{ii},filesep);
-    startInd = Ind(end);
-    behIndex.Animal(ii) = {dataIndex.LogFilePath{ii}(startInd+1:end)};
+    startInd = Ind(end-1);
+    endInd = Ind(end);
+    behIndex.Animal(ii) = {dataIndex.LogFilePath{ii}(startInd+1:endInd-1)};
     behIndex.Experiment(ii) = logfileData.Experiment;
     behIndex.DateNumber(ii) = logfileData.DateNumber;
     %%

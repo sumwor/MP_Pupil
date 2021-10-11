@@ -119,51 +119,51 @@ if isfield(stats ,'ckl')
 %     set(gca,'box','off') 
 %     
     %% matching pennies plot
-    figure;
-    xAxis = 200:699;  
-    subplot(3,1,2)
-    plot(xAxis-199,stats.ql(xAxis,x),'r');
-    hold on; plot(xAxis-199,stats.qr(xAxis,x),'b');
-    set(gca,'xticklabel',[]);
-    ylabel('Action values');
-    Lgd = legend('Q_L','Q_R');
-    set(Lgd,'EdgeColor','none');
-    ylim([0 1]);
-    set(gca,'box','off') 
-    
-    subplot(3,1,3)
-    plot(xAxis-199,stats.ckl(xAxis,x),'r');
-    hold on; plot(xAxis-199,stats.ckr(xAxis,x),'b');
-    xlabel('Trials');
-    ylabel('Choice-autocorrelation');
-    Lgd = legend('C_L','C_R');
-    set(Lgd,'EdgeColor','none');
-    set(gca,'box','off') 
-    
-    subplot(3,1,1)
-    plot(xAxis-199,stats.pl(xAxis,x),'Black');
-    ylabel('P_L');
-    hold on; plot(xAxis-199,PL(xAxis),'color',[0.7,0.7,0.7])
-    %hold on; plot(xAxis, binomialMA(1:500));
-    % plot the choice information
-
-    for ii = xAxis(1):xAxis(end)
-        if stats.c(ii,1) == 1 && stats.r(ii,1) == 1
-            hold on; plot([ii-199,ii-199],[1.05,1.25],'b');  %reward
-        elseif stats.c(ii,1) == 1 && stats.r(ii,1) == 0
-            hold on; plot([ii-199,ii-199],[1.05,1.15],'b');  %no reward
-        elseif stats.c(ii,1) == -1 && stats.r(ii,1) == 1
-             hold on; plot([ii-199,ii-199],[-0.05,-0.25],'r');  %reward
-        elseif stats.c(ii,1) == -1 && stats.r(ii,1) == 0
-             hold on; plot([ii-199,ii-199],[-0.05,-0.15],'r');  %no reward
-        end
-    end
-    set(gca,'xticklabel',[]);
-    set(gca,'box','off') 
-    
-    print(gcf,'-dpng',['session-qparam-player-choice' int2str(x)]);    %png format
-    saveas(gcf,['session-qparam-player-choice' int2str(x)], 'fig');
-    saveas(gcf, ['session-qparam-player-choice' int2str(x)],'svg');
+%     figure;
+%     xAxis = 200:699;  
+%     subplot(3,1,2)
+%     plot(xAxis-199,stats.ql(xAxis,x),'r');
+%     hold on; plot(xAxis-199,stats.qr(xAxis,x),'b');
+%     set(gca,'xticklabel',[]);
+%     ylabel('Action values');
+%     Lgd = legend('Q_L','Q_R');
+%     set(Lgd,'EdgeColor','none');
+%     ylim([0 1]);
+%     set(gca,'box','off') 
+%     
+%     subplot(3,1,3)
+%     plot(xAxis-199,stats.ckl(xAxis,x),'r');
+%     hold on; plot(xAxis-199,stats.ckr(xAxis,x),'b');
+%     xlabel('Trials');
+%     ylabel('Choice-autocorrelation');
+%     Lgd = legend('C_L','C_R');
+%     set(Lgd,'EdgeColor','none');
+%     set(gca,'box','off') 
+%     
+%     subplot(3,1,1)
+%     plot(xAxis-199,stats.pl(xAxis,x),'Black');
+%     ylabel('P_L');
+%     hold on; plot(xAxis-199,PL(xAxis),'color',[0.7,0.7,0.7])
+%     %hold on; plot(xAxis, binomialMA(1:500));
+%     % plot the choice information
+% 
+%     for ii = xAxis(1):xAxis(end)
+%         if stats.c(ii,1) == 1 && stats.r(ii,1) == 1
+%             hold on; plot([ii-199,ii-199],[1.05,1.25],'b');  %reward
+%         elseif stats.c(ii,1) == 1 && stats.r(ii,1) == 0
+%             hold on; plot([ii-199,ii-199],[1.05,1.15],'b');  %no reward
+%         elseif stats.c(ii,1) == -1 && stats.r(ii,1) == 1
+%              hold on; plot([ii-199,ii-199],[-0.05,-0.25],'r');  %reward
+%         elseif stats.c(ii,1) == -1 && stats.r(ii,1) == 0
+%              hold on; plot([ii-199,ii-199],[-0.05,-0.15],'r');  %no reward
+%         end
+%     end
+%     set(gca,'xticklabel',[]);
+%     set(gca,'box','off') 
+%     
+%     print(gcf,'-dpng',['session-qparam-player-choice' int2str(x)]);    %png format
+%     saveas(gcf,['session-qparam-player-choice' int2str(x)], 'fig');
+%     saveas(gcf, ['session-qparam-player-choice' int2str(x)],'svg');
 end
 %%
 

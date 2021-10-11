@@ -30,7 +30,7 @@ intert=[t(1):interdt:t(end)]';
 
 % t might contain similar time point
 %[t,index] = unique(t);
-intersig=interp1(t,signal(index),intert);
+intersig=interp1(t,signal,intert);
 
 % align signal to the event
 % use window slightly wider than the regression, so regression analysis
