@@ -34,7 +34,7 @@ stats_sim.ql(1) = stats.ql;
 
 stats_sim.rpe(1) = stats.rpe;
 stats_sim.pl(1) = stats.pl;
-stats_sim.pr(1) = stats.pr;
+%stats_sim.pr(1) = stats.pr;
 
 if strcmp(player1.label, 'algo_FQ_RPE_CK_drift')
     stats_sim.ckl=nan(n,1);      % action value for left choice
