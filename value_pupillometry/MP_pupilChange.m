@@ -41,7 +41,7 @@ for ii = 1:nFiles
         % average z-score of 0-1s before cue?
         pupilResp = [];
         pupilRespT = [];
-         
+        pupilBase = [];
         % find the maximum length of the pupil recording/behavior file
         maxTime = min(pupil.t(end), trialData.cueTimes(end)+6);
         maxTrial = find(trialData.cueTimes+6 <= maxTime, 1, 'last');
@@ -53,7 +53,7 @@ for ii = 1:nFiles
             pupilAfter = pupil.dia(pupil.t > trialData.cueTimes(ll)-2 & pupil.t < trialData.cueTimes(ll)+6);
             tAfter = pupil.t(pupil.t > trialData.cueTimes(ll)-2 & pupil.t < trialData.cueTimes(ll)+6);
             tempResp = [pupilAfter - nanmean(pupilBefore)];
-            
+            tempBase = nanmean(pupilBefore);
             % the length should be 160 from -2s to 6s, if not long enough,
             % use NaN 
             if length(tempResp) < 160
@@ -63,13 +63,14 @@ for ii = 1:nFiles
             end
             pupilResp = [pupilResp; tempResp];
             pupilRespT = [pupilRespT; tAfter];
-
+            pupilBase = [pupilBase;tempBase];
         end
         
         % reshape 
 %         [dimx,dimy] = size(pupilResp);
          pupil.resp = pupilResp;
          pupil.respT = pupilRespT;
+         pupil.base = pupilBase;
         % get derivate of pupil zscore
 %         pupil.derivative = diff(pupil.dia)/mean(diff(pupil.t));
 %         pupil.derivative = [pupil.derivative,NaN];  

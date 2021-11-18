@@ -137,7 +137,7 @@ reg_all = getBootstrp(reg_all, 0,0.05);
 
 pvalThresh = 0.01;
 
-tlabel1={'c(n)','c(n-1)','r(n-1)','Q_L-Q_R', 'RPE', 'C_L-C_R', 'CPE', 'Average reward', 'Cumulative reward'};
+tlabel1={'c(n)','c(n-1)','r(n)','r(n-1)','dQ', 'RPE', 'dK', 'CKE', 'Average reward', 'Cumulative reward'};
 % tlabel2={'c(n)','c(n-1)','r(n-1)','Q_L-Q_R', 'updatedQ', 'C_L-C_R','updatedC','Average reward', 'Cumulative reward'};
 if ~exist(savefigpath)
     mkdir(savefigpath)

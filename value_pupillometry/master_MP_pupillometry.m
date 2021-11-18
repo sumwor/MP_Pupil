@@ -14,7 +14,7 @@ close all;
 setup_figprop;
 
 %root_path = '/Volumes/haha/MatchingPennies/pupilData';
-root_path = 'J:\MatchingPennies\pupilData';
+root_path = 'E:\labcode\MP_Pupil\pupilData';
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%% Preprocessing: parse each log file and tabulate the data set
@@ -29,7 +29,7 @@ analysispath = fullfile(root_path,'analysis');
 dataIndex = makeDataIndex(logfilepath, analysispath);
 
 % Parse and analyze each logfile, save as .mat files, as needed
-dataIndex = MP_createBehMatFiles(dataIndex);
+dataIndex = MP_pupil_createBehMatFiles(dataIndex);
 
 % Add information about lesion
 % Future - Add information about pupil, imaging, etc.
@@ -88,7 +88,7 @@ model_path = fullfile(root_path,'mat_models');
 MP_compareModels(model_path);   % model comparison
 
 %MP_confusionMat(model_path);
-
+MP_choicekernel_switch(dataIndex(dataIndex.pupil==1,:),model_path)
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%  pupil analysis
 
@@ -106,9 +106,13 @@ MP_pupilSimpleplots(dataIndex(dataIndex.pupil==1,:));
 %% tonic activity, no deterministic results
 % MP_tonic(dataIndex(dataIndex.pupil==1,:), save_path_pupil);
 
+% use latent variables to predict 
 
 %% calculate pupil change/pupil response
 MP_pupilChange(dataIndex(dataIndex.pupil==1,:), save_path_pupil);
+
+%% fit the softmax to pupil response
+MP_pupilResp_latent(dataIndex(dataIndex.pupil==1,:),save_path_pupil,model_path);
 
 %% Linear regression with choice and reward
 % running regression (choice and reward) on individual sessions
@@ -158,8 +162,25 @@ MP_pupilRL_RPE_CK(dataIndex(dataIndex.pupil==1,:));
 % MP_pupilRLRPE_acrossSessions_CK(dataIndex(dataIndex.pupil==1,:), save_path_pupil);
 MP_pupilRLRPE_change_acrossSessions_CK(dataIndex(dataIndex.pupil==1,:), save_path_pupil);
 
+MP_pupilRL_CKE_CK(dataIndex(dataIndex.pupil==1,:));
+MP_pupilRLCKE_change_acrossSessions_CK(dataIndex(dataIndex.pupil==1,:), save_path_pupil);
+
 MP_pupilRL_RPE_rn_CK(dataIndex(dataIndex.pupil==1,:));
 MP_pupilRLRPE_rn_change_acrossSessions_CK(dataIndex(dataIndex.pupil==1,:), save_path_pupil);
+
+%% behavior relate to high/low pupil diameter
+MP_arousal_beh(dataIndex(dataIndex.pupil==1,:), save_path_pupil);
+%% run linear regression with trials separated into high/low pupil diameter
+MP_pupilMLR_arousal(dataIndex(dataIndex.pupil==1,:));
+MP_pupilMLR_arousal_acrossSessions(dataIndex(dataIndex.pupil==1,:), save_path_pupil);
+
+MP_pupil_AS_arousal(dataIndex(dataIndex.pupil==1,:));
+MP_pupil_AS_arousal_acrossSessions(dataIndex(dataIndex.pupil==1,:), save_path_pupil);
+
+MP_pupil_RPE_arousal(dataIndex(dataIndex.pupil==1,:));
+% MP_pupilRLRPE_acrossSessions_CK(dataIndex(dataIndex.pupil==1,:), save_path_pupil);
+MP_pupil_RPE_arousal_acrossSessions(dataIndex(dataIndex.pupil==1,:), save_path_pupil);
+
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%% Simulation - using algorithm and actual choices and outcomes from session
 
